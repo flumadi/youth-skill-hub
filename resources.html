@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Learning Resources | Youth Skills Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles">
+        <div class="particle" style="--size: 3; --duration: 15; --delay: 0; --color: #4fc3f7;"></div>
+        <div class="particle" style="--size: 2; --duration: 20; --delay: 2; --color: #f06292;"></div>
+        <div class="particle" style="--size: 4; --duration: 25; --delay: 5; --color: #7e57c2;"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <span>Youth<span class="highlight">Skills</span>Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="mentorship.html">Mentorship</a></li>
+                <li><a href="#newsletter" class="btn-nav">Join Now</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="resources-hero">
+            <div class="hero-content">
+                <h1>Free <span class="highlight">Learning Resources</span></h1>
+                <p class="subtitle">Curated collection of the best free courses and materials to boost your digital skills</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search courses...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resource-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="tab-btn" data-category="coding">
+                    <i class="fas fa-code"></i> Coding
+                </button>
+                <button class="tab-btn" data-category="business">
+                    <i class="fas fa-briefcase"></i> Business
+                </button>
+                <button class="tab-btn" data-category="design">
+                    <i class="fas fa-paint-brush"></i> Design
+                </button>
+                <button class="tab-btn" data-category="soft-skills">
+                    <i class="fas fa-comments"></i> Soft Skills
+                </button>
+            </div>
+            
+            <div class="resources-container">
+                <!-- Coding Resources -->
+                <div class="resource-card" data-category="coding">
+                    <div class="resource-badge coding">
+                        <i class="fas fa-code"></i> Coding
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Development">
+                        <div class="hover-overlay">
+                            <a href="https://www.plpacademy.ac.ke/courses" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>PLP Web Development</h3>
+                        <p class="resource-description">Learn HTML, CSS, and JavaScript from PLP Academy's free curriculum with Kenyan mentors.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://www.plpacademy.ac.ke/courses" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Beginner</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More resource cards for other categories -->
+                <!-- Business Resource -->
+                <div class="resource-card" data-category="business">
+                    <div class="resource-badge business">
+                        <i class="fas fa-briefcase"></i> Business
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Entrepreneurship">
+                        <div class="hover-overlay">
+                            <a href="https://www.alxafrica.com" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Digital Entrepreneurship</h3>
+                        <p class="resource-description">Learn how to start and grow an online business in Kenya from ALX Africa.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://www.alxafrica.com" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Intermediate</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Design Resource -->
+                <div class="resource-card" data-category="design">
+                    <div class="resource-badge design">
+                        <i class="fas fa-paint-brush"></i> Design
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Graphic Design">
+                        <div class="hover-overlay">
+                            <a href="https://www.udemy.com/courses/design/graphic-design-and-illustration/" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Graphic Design Fundamentals</h3>
+                        <p class="resource-description">Free course on Canva, Photoshop, and design principles from Udemy.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 5 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://www.udemy.com/courses/design/graphic-design-and-illustration/" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Beginner</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills Resource -->
+                <div class="resource-card" data-category="soft-skills">
+                    <div class="resource-badge soft-skills">
+                        <i class="fas fa-comments"></i> Soft Skills
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1522205408450-add114ad53fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Communication">
+                        <div class="hover-overlay">
+                            <a href="https://www.coursera.org/learn/professional-skills" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Professional Communication</h3>
+                        <p class="resource-description">Master email etiquette, presentations, and professional writing skills.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 3 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://www.coursera.org/learn/professional-skills" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">All Levels</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coding Resource 2 -->
+                <div class="resource-card" data-category="coding">
+                    <div class="resource-badge coding">
+                        <i class="fas fa-code"></i> Coding
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Python">
+                        <div class="hover-overlay">
+                            <a href="https://www.andela.com/learning-community" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Python for Beginners</h3>
+                        <p class="resource-description">Free Python programming course from Andela with Kenyan mentors.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://www.andela.com/learning-community" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Beginner</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Business Resource 2 -->
+                <div class="resource-card" data-category="business">
+                    <div class="resource-badge business">
+                        <i class="fas fa-briefcase"></i> Business
+                    </div>
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Digital Marketing">
+                        <div class="hover-overlay">
+                            <a href="https://learndigital.withgoogle.com/digitalskills" target="_blank" class="btn btn-primary">View Course</a>
+                        </div>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Digital Marketing</h3>
+                        <p class="resource-description">Learn how to promote businesses online with Google's free course.</p>
+                        <div class="resource-meta">
+                            <span><i class="far fa-clock"></i> 4 Weeks</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="https://learndigital.withgoogle.com/digitalskills" target="_blank" class="btn btn-primary">
+                                <span>Start Learning</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="difficulty">
+                                <span class="difficulty-label">Intermediate</span>
+                                <div class="difficulty-bar">
+                                    <div class="difficulty-level" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Need Guidance on What to Learn?</h2>
+                <p>Our PLP mentors can help you choose the right path based on your goals and interests.</p>
+                <a href="mentorship.html" class="btn btn-secondary">
+                    <span>Request Mentorship</span>
+                    <i class="fas fa-user-graduate"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <span>Youth<span class="highlight">Skills</span>Hub</span>
+                </div>
+                <p>Empowering Kenyan youth with digital skills for the 21st century economy through PLP mentorship and free resources.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Learning Resources</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="https://www.plpacademy.ac.ke" target="_blank">PLP Academy</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-envelope"></i> info@youthskillshub.co.ke</p>
+                <p><i class="fas fa-phone"></i> +254 700 000000</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Youth Skills Hub. Partnered with <a href="https://www.plpacademy.ac.ke" target="_blank">PLP Academy</a>.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
