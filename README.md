@@ -1,18 +1,18 @@
-#Youth Skill Hub - README
-##Overview
+# Youth Skill Hub - README
+## Overview
 Youth Skill Hub is a website designed to provide young people with access to skill development resources, courses, and opportunities. This document explains how to access the website and the technical process behind its creation and deployment.
 
-##Accessing the Website
+## Accessing the Website
 You can access Youth Skill Hub by visiting:
 🔗 https://youthskillhub.netlify.app
 
 The website is mobile-responsive and works on all modern browsers including:
-Google Chrome
-Mozilla Firefox
-Microsoft Edge
-Safari
+-Google Chrome
+-Mozilla Firefox
+-Microsoft Edge
+-Safari
 
-##Development Process
+## Development Process
 Tools Used
 Visual Studio Code (VSCode): Primary code editor
 Git: Version control system
@@ -28,7 +28,7 @@ Set up basic file structure:
   /js (for JavaScript files)
 index.html
 
-##Development:
+## Development:
 -Used HTML5, CSS3, and JavaScript for core functionality
 -Implemented responsive design with CSS Flexbox/Grid
 -Added interactive elements with JavaScript
@@ -39,9 +39,9 @@ index.html
 *IntelliSense (code completion)
 Version Control:
 
-##Regular commits to Git with descriptive messages
+📚 Regular commits to Git with descriptive messages
 
-##Created separate branches for features before merging to main
+## Created separate branches for features before merging to main
 
 ✅Deployment with Netlify
 Deployment Steps
@@ -59,7 +59,7 @@ Pre-deployment:
 
 Publish directory: / (or /dist if using build tool)
 
-##Deployment:
+## Deployment:
 
 - Netlify automatically detected the static files
 - Assigned a random netlify.app subdomain
@@ -71,11 +71,12 @@ Publish directory: / (or /dist if using build tool)
 - Configured basic SEO settings
 - Enabled HTTPS automatically through Netlify
 
-##Maintenance
+## Maintenance
 The site is set up for continuous deployment:
 Any changes pushed to the main branch automatically trigger a rebuild
 Netlify provides analytics and form handling
 Easy rollback to previous versions if needed
 
-##Support
+## Support
 -- For any issues with the website, please contact [mathiasfridah2@gmail.com] or open an issue in the project repository.
+
