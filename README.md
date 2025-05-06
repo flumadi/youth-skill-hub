@@ -13,14 +13,15 @@ The website is mobile-responsive and works on all modern browsers including:
 -Safari
 
 ## Development Process
-Tools Used
-Visual Studio Code (VSCode): Primary code editor
-Git: Version control system
-Netlify: Deployment platform
-Project Setup in VSCode
-Initial Setup:
-Created project folder and initialized Git repository
-Set up basic file structure:
+Tools Used:
+
+-Visual Studio Code (VSCode): Primary code editor<br>
+-Git: Version control system<br>
+-Netlify: Deployment platform<br>
+-Project Setup in VSCode<br>
+-Initial Setup:<br>
+-Created project folder and initialized Git repository<br>
+-Set up basic file structure:<br>
 
 /src
   /assets (for images, fonts)
