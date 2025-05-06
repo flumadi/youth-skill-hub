@@ -30,15 +30,15 @@ Tools Used:
 index.html
 
 ## Development:
--Used HTML5, CSS3, and JavaScript for core functionality
--Implemented responsive design with CSS Flexbox/Grid
--Added interactive elements with JavaScript
--Used VSCode extensions like:
-*Live Server (for local testing)
-*Prettier (code formatting)
-*ESLint (code quality)
-*IntelliSense (code completion)
-Version Control:
+-Used HTML5, CSS3, and JavaScript for core functionality<br>
+-Implemented responsive design with CSS Flexbox/Grid<br>
+-Added interactive elements with JavaScript<br>
+-Used VSCode extensions like:<br>
+*Live Server (for local testing)<br>
+*Prettier (code formatting)<br>
+*ESLint (code quality)<br>
+*IntelliSense (code completion)<br>
+Version Control:<br>
 
 📚 Regular commits to Git with descriptive messages
 
@@ -48,35 +48,35 @@ Version Control:
 Deployment Steps
 Pre-deployment:
 
---Optimized assets (compressed images, minified CSS/JS)
---Tested locally using VSCode's Live Server extension
---Verified responsive behavior on multiple devices
+--Optimized assets (compressed images, minified CSS/JS)<br>
+--Tested locally using VSCode's Live Server extension<br>
+--Verified responsive behavior on multiple devices<br>
 
 ✅Netlify Setup:
--- Created Netlify account (free tier)
--- Connected GitHub/GitLab repository or used manual drag-and-drop
--- Configured basic settings:
--- Build command: (if using static site, left blank)
+-- Created Netlify account (free tier)<br>
+-- Connected GitHub/GitLab repository or used manual drag-and-drop<br>
+-- Configured basic settings:<br>
+-- Build command: (if using static site, left blank)<br>
 
 Publish directory: / (or /dist if using build tool)
 
 ## Deployment:
 
-- Netlify automatically detected the static files
-- Assigned a random netlify.app subdomain
-- Configured custom domain (if applicable)
-- Enabled automatic deploys on Git push
+- Netlify automatically detected the static files<br>
+- Assigned a random netlify.app subdomain<br>
+- Configured custom domain (if applicable)<br>
+- Enabled automatic deploys on Git push<br>
 
 ✅Post-deployment:
-- Set up form handling (if contact forms exist)
-- Configured basic SEO settings
-- Enabled HTTPS automatically through Netlify
+- Set up form handling (if contact forms exist)<br>
+- Configured basic SEO settings<br>
+- Enabled HTTPS automatically through Netlify<br>
 
 ## Maintenance
-The site is set up for continuous deployment:
-Any changes pushed to the main branch automatically trigger a rebuild
-Netlify provides analytics and form handling
-Easy rollback to previous versions if needed
+The site is set up for continuous deployment:<br>
+Any changes pushed to the main branch automatically trigger a rebuild<br>
+Netlify provides analytics and form handling<br>
+Easy rollback to previous versions if needed<br>
 
 ## Support
 -- For any issues with the website, please contact [mathiasfridah2@gmail.com] or open an issue in the project repository.
