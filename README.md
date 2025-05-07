@@ -4,7 +4,7 @@ Youth Skill Hub is a website designed to provide young people with access to ski
 
 ## Accessing the Website
 You can access Youth Skill Hub by visiting:
-🔗 https://youthskillhub.netlify.app
+🔗 https://youth-skills-hub.netlify.app
 
 The website is mobile-responsive and works on all modern browsers including:
 -Google Chrome
