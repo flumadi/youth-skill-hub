@@ -1,4 +1,4 @@
-# Youth Skill Hub - README
+# Youth Skill Hub 
 ## Overview
 Youth Skill Hub is a website designed to provide young people with access to skill development resources, courses, and opportunities. This document explains how to access the website and the technical process behind its creation and deployment.
 
