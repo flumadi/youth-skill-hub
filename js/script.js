@@ -28,6 +28,148 @@ navLinks.forEach(link => {
         });
     });
 });
+// Updated counter values for blog metrics
+function animateValue(id, start, end, duration) {
+    const obj = document.getElementById(id);
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+// Initialize counters with blog-appropriate values
+document.addEventListener('DOMContentLoaded', () => {
+    animateValue('mentor-count', 0, 28, 2000);    // Changed from mentors to authors
+    animateValue('course-count', 0, 142, 2000);  // Changed from courses to articles
+    animateValue('user-count', 0, 3560, 2000);   // Changed to monthly readers
+});
+
+// Updated category filtering for blog posts
+const tabBtns = document.querySelectorAll('.tab-btn');
+const resourceCards = document.querySelectorAll('.resource-card');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        tabBtns.forEach(btn => btn.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const category = btn.dataset.category;
+        
+        resourceCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 300);
+            }
+        });
+    });
+});
+
+// Testimonial slider - Can remain but consider repurposing for featured author quotes
+let testimonialIndex = 1;
+showTestimonial(testimonialIndex);
+
+function currentTestimonial(n) {
+    showTestimonial(testimonialIndex = n);
+}
+
+function showTestimonial(n) {
+    let i;
+    let testimonials = document.getElementsByClassName("testimonial");
+    let dots = document.getElementsByClassName("dot");
+    
+    if (n > testimonials.length) {testimonialIndex = 1}
+    if (n < 1) {testimonialIndex = testimonials.length}
+    
+    for (i = 0; i < testimonials.length; i++) {
+        testimonials[i].classList.remove("active");
+    }
+    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    
+    testimonials[testimonialIndex-1].classList.add("active");
+    dots[testimonialIndex-1].classList.add("active");
+}
+
+// Updated form validation for newsletter signup (simplified)
+const newsletterForm = document.querySelector('.newsletter-form');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        const submitBtn = newsletterForm.querySelector('button');
+        
+        if (emailInput.value.trim() === '' || !isEmail(emailInput.value.trim())) {
+            emailInput.style.borderColor = 'var(--danger)';
+        } else {
+            emailInput.style.borderColor = 'var(--success)';
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+            submitBtn.style.backgroundColor = 'var(--success)';
+            
+            setTimeout(() => {
+                newsletterForm.reset();
+                submitBtn.innerHTML = '<span>Subscribe</span><i class="fas fa-paper-plane"></i>';
+                submitBtn.style.backgroundColor = '';
+                emailInput.style.borderColor = '';
+            }, 2000);
+            
+            console.log('New subscriber:', emailInput.value.trim());
+        }
+    });
+}
+
+// Search functionality for blog articles
+const searchInput = document.querySelector('.search-box input');
+if (searchInput) {
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll('.resource-card');
+        
+        cards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('.resource-description').textContent.toLowerCase();
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 300);
+            }
+        });
+    });
+}
+
+// Helper functions - No changes needed
+function isEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function isPhone(phone) {
+    return /^[0-9]{10,15}$/.test(phone);
+}
 
 // Animated counter for stats
 function animateValue(id, start, end, duration) {
